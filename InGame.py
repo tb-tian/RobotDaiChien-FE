@@ -38,7 +38,7 @@ def Run(jsonFile, listTeam):
 	running = True
 
 	# Set up Player Status
-	statusWidth = screenWidth * 120 / 610;
+	statusWidth = screenWidth * 120 / 610
 	statusHeight = screenHeight * 80 / 406
 	statusSize = (statusWidth, statusHeight)
 	statusCoord = [(0, 0), (screenWidth - statusWidth, 0), (0, screenHeight - statusHeight), (screenWidth - statusWidth, screenHeight - statusHeight)]
