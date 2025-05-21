@@ -112,7 +112,7 @@ def Run(jsonFile, listTeam):
 
 
 	
-	pygame.mixer.Sound.play(Const.INGAME_SOUND, loops = -1)
+	# pygame.mixer.Sound.play(Const.INGAME_SOUND, loops = -1)
 
 	# Game Running
 	while running :
@@ -160,7 +160,7 @@ def Run(jsonFile, listTeam):
 			pygame.mixer.stop()
 			leaderboard = LeaderboardClass.Leaderboard(playerList)
 			leaderboard.Run()
-			break
+			break		
 
 		if CheckMoving(playerList) == False and isNewStep:
 			isNewStep = False

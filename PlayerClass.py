@@ -36,8 +36,8 @@ class Player():
 		self.curFrame = 0
 		self.numFrame = len(self.playerFrame[self.animationDirection])
 		self.isMoving = False
-		self.moveSpeed = 15
-		self.original_move_speed = 15 # Store original speed
+		self.moveSpeed = 30
+		self.original_move_speed = 30 # Store original speed
 		self.pending_next_target = None # For multi-cell moving
 
 		self.playerPortal = PortalClass.Portal(gameScreen, curCell)
@@ -229,7 +229,7 @@ class Player():
 						
 						if can_reach_final_from_intermediate:
 							self.pending_next_target = newCellIndex # Set the original target as pending
-							self.moveSpeed = 30 # Set special speed for 2-step move
+							self.moveSpeed = 60 # Set special speed for 2-step move
 							self.ChangeDirection(direction_to_intermediate) # Start moving to the intermediate cell
 							return
 		

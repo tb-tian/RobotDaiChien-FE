@@ -5,7 +5,7 @@ import json
 import copy
 
 def getMap(jsonFile, step):
-	print("Json file: " + jsonFile)
+	print(f"Step: {step}" + " Json file: " + jsonFile)
 	mapFile = open(jsonFile)
 	mapData = json.load(mapFile)
 
