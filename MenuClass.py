@@ -49,8 +49,10 @@ class Menu():
 		pygame.init()
 
 		# Menu Screen
-		# self.gameScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-		self.gameScreen = pygame.display.set_mode((1920, 1080))
+		if os.name == 'nt': 
+			self.gameScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+		else:
+			self.gameScreen = pygame.display.set_mode((1920, 1080))
 		self.screenWidth, self.screenHeight = pygame.display.get_surface().get_size()
 		pygame.display.flip()
 		pygame.display.set_caption("Robot Dai Chien")
