@@ -1,4 +1,5 @@
 import pygame
+import os
 import Const
 import CellClass
 import PlayerClass
@@ -26,8 +27,11 @@ def Run(jsonFile, listTeam):
 	pygame.init()
 
 	# Set up Game Window
-	# gameScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-	gameScreen = pygame.display.set_mode((1920, 1080))
+	if os.name == 'nt': 
+		gameScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+	else:
+		gameScreen = pygame.display.set_mode((1920, 1080))
+		
 	pygame.display.set_caption("Robot Dai Chien")
 	pygame.display.flip()
 
@@ -52,10 +56,10 @@ def Run(jsonFile, listTeam):
 	isNewStep = False
 
 	# Set up Map
-	mapHeight = screenHeight * 212/ 406
+	mapHeight = screenHeight * 300/ 406
 	mapWidth = mapHeight
 	mapCoordX = (screenWidth - mapWidth) / 2
-	mapCoordY = screenHeight * 133 / 406
+	mapCoordY = screenHeight * 60 / 406
 	# print (mapWidth, mapHeight, mapCoordX, mapCoordY)
 	gameMap = MapClass.Map(gameScreen, jsonFile, mapWidth, mapHeight, mapCoordX, mapCoordY)
 	
