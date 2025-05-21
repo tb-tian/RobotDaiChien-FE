@@ -69,11 +69,6 @@ class Menu():
 		self.running = True
 		self.clock = pygame.time.Clock()
 
-		# Load Lost Star Image
-		self.lostStarSize = (self.screenWidth * 3 / 10, self.screenHeight * 4 / 10)
-		self.lostStarImage = pygame.transform.scale(Const.LOST_STAR_IMAGE, self.lostStarSize)
-		self.lostStarCoord = ((self.screenWidth / 2 - self.lostStarSize[0]) / 2, (self.screenHeight - self.lostStarSize[1]) / 2)
-
 		# Load Start Image
 		self.startButtonSize = (self.screenWidth * 1.5 / 10, self.screenHeight * 1.5 / 10)
 		self.startButtonImage = pygame.transform.scale(Const.START_BUTTON_IMAGE, self.startButtonSize)
@@ -215,7 +210,6 @@ class Menu():
 			
 			# Draw Window
 			self.gameScreen.blit(self.backgroundImage, (0, 0))
-			self.gameScreen.blit(self.lostStarImage, self.lostStarCoord)
 
 			self.startButton.draw(self.gameScreen)
 			self.twoPlayerButton.draw(self.gameScreen)

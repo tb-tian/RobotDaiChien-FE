@@ -56,9 +56,11 @@ def Run(jsonFile, listTeam):
 	isNewStep = False
 
 	# Set up Map
+	# mapHeight = screenHeight * 212 / 406
 	mapHeight = screenHeight * 300/ 406
 	mapWidth = mapHeight
 	mapCoordX = (screenWidth - mapWidth) / 2
+	# mapCoordY = screenHeight * 133 / 406
 	mapCoordY = screenHeight * 60 / 406
 	# print (mapWidth, mapHeight, mapCoordX, mapCoordY)
 	gameMap = MapClass.Map(gameScreen, jsonFile, mapWidth, mapHeight, mapCoordX, mapCoordY)

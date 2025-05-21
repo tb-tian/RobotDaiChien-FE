@@ -12,7 +12,6 @@ class PlayerStatus():
 		self.playerID = ID
 		self.playerScore = 0
 		self.isAlive = isAlive
-		# self.statusBackground = pygame.transform.scale(Const.STATUS_BACKGROUND, statusLen)
 		
 		# Avatar
 		self.avaLen = statusLen[1] * 8 / 10

@@ -41,9 +41,9 @@ CELL_LENGTH = 100
 CELL_IMAGE_LIST = [pygame.image.load(f'Assets/Images/Cell/tile_{i}.png') for i in range(12)]
 CELL_MOVE = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 PLAYER_FRAME_LIST = [
-	[pygame.image.load(f'Assets/Images/Player/player{i}-left-{j}.png') for i in range(1, 5) for j in range(12)],
-	[pygame.image.load(f'Assets/Images/Player/player{i}-right-{j}.png') for i in range(1, 5) for j in range(12)],
-	[pygame.image.load(f'Assets/Images/Player/player{i}-ghost-{j}.png') for i in range(1, 5) for j in range(4)]
+	[pygame.image.load(f'Assets/Images/Player/player{i}-left-{j}.png') for i in range(1, 5) for j in range(1, 5)],
+	[pygame.image.load(f'Assets/Images/Player/player{i}-right-{j}.png') for i in range(1, 5) for j in range(1, 5)],
+	[pygame.image.load(f'Assets/Images/Player/player{i}-die-{j}.png') for i in range(1, 5) for j in range(1,2)]
 ]
 PORTAL_FRAME_LIST = [pygame.image.load(f'Assets/Images/Portal/portal-{i}.png') for i in range(9)]
 
@@ -51,13 +51,6 @@ PORTAL_FRAME_LIST = [pygame.image.load(f'Assets/Images/Portal/portal-{i}.png') f
 TANG_TOC = pygame.image.load(f'Assets/Images/PowerUps/tangtoc.png')
 DAU_TRON = pygame.image.load(f'Assets/Images/PowerUps/dautron.png')
 MAU_NO = pygame.image.load(f'Assets/Images/PowerUps/mauno.png')
-
-
-# Status
-STATUS_BACKGROUND = pygame.image.load('Assets/Images/Status/Status.png')
-PLAYER_IMAGE = [
-	pygame.image.load(f'Assets/Images/Player/ava{i}.png') for i in range(4)
-]
 
 # Map file
 MAP_NORM = '.'
@@ -73,7 +66,6 @@ BACK_BUTTON_IMAGE = pygame.image.load('Assets/Images/Leaderboard/back-button.png
 
 # Menu
 MENU_BACKGROUND = pygame.image.load('Assets/Images/Background/Menu-Background.png')
-LOST_STAR_IMAGE = pygame.image.load('Assets/Images/Menu/title.png')
 START_BUTTON_IMAGE = pygame.image.load('Assets/Images/Menu/start-button.png')
 TWO_PLAYER_IMAGE = pygame.image.load('Assets/Images/Menu/2player-button.png')
 FOUR_PLAYER_IMAGE = pygame.image.load('Assets/Images/Menu/4player-button.png')
