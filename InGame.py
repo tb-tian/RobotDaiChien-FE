@@ -6,7 +6,6 @@ import PlayerClass
 import PlayerStatus
 import MapClass
 import LeaderboardClass
-import MapEngineClass
 
 def CheckMoving(playerList):
 	for i in playerList:
@@ -67,17 +66,6 @@ def Run(jsonFile, listTeam):
 	
 	# Set up player
 	playerList = []
-
-	# Set up Map engine
-	mapEngineSize = (screenWidth * 62 / 610, screenHeight * 64 / 406)
-	MapEngineCoord = (
-		(screenWidth * 65 / 610, screenHeight * 278 / 406), 
-		(screenWidth * 488 / 610, screenHeight * 278 / 406)
-	)
-	mapEngine = [
-		MapEngineClass.MapEngine(gameScreen, MapEngineCoord[0], mapEngineSize, 0),
-		MapEngineClass.MapEngine(gameScreen, MapEngineCoord[1], mapEngineSize, 1)
-	]
 
 	print(listTeam)
 
@@ -194,9 +182,6 @@ def Run(jsonFile, listTeam):
 			if i != None:
 				i.MoveFrame()
 				i.drawStatus()
-
-		for i in mapEngine:
-			i.MoveFrame()
 
 		# Draw Frequency
 		gameScreen.blit(frequencyText, frequencyCoord)
