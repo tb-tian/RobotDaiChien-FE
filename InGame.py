@@ -73,7 +73,7 @@ def Run(jsonFile, listTeam):
 	clock = pygame.time.Clock()
 	isEndGame = False
 	initTick = pygame.time.get_ticks()
-	stepTime = 0.75
+	stepTime = 1
 
 	# while(True):
 	# 	print(preGameCnt)
