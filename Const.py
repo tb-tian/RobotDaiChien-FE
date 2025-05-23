@@ -82,4 +82,4 @@ LEADERBOARD_SOUND = pygame.mixer.Sound("Assets/Sounds/leaderboard.mp3")
 INGAME_SOUND = pygame.mixer.Sound("Assets/Sounds/ingame_1.mp3")
 
 # Player Name List
-PLAYER_NAME_LIST = ['bot1', 'bot2', 'henmarte', 'TripleChickens']
+PLAYER_NAME_LIST = ['NHMinh', 'NCChuong', 'HDVu', 'NHMTam']
