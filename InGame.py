@@ -75,9 +75,6 @@ def Run(jsonFile, listTeam):
 	initTick = pygame.time.get_ticks()
 	stepTime = 0.75
 
-	pregameImage = pygame.transform.scale(Const.PREGAME_BACKGROUND, (screenWidth, screenHeight))
-	preGameCnt = 0	
-
 	# while(True):
 	# 	print(preGameCnt)
 		
