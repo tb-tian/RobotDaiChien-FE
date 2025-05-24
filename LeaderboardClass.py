@@ -58,9 +58,9 @@ class Leaderboard():
 	def __init__(self, playerList):
 		# Screen
 		if os.name == 'nt': 
-			gameScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+			self.gameScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 		else:
-			gameScreen = pygame.display.set_mode((1920, 1080))
+			self.gameScreen = pygame.display.set_mode((1920, 1080))
 		self.background = pygame.transform.scale(Const.LEADERBOARD_BG, (pygame.display.get_surface().get_size()))
 		self.gameScreen.blit(self.background, (0, 0))
 		self.screenWidth, self.screenHeight = pygame.display.get_surface().get_size()
