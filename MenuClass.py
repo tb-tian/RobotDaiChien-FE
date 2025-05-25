@@ -73,7 +73,7 @@ class Menu():
 		self.clock = pygame.time.Clock()
 
 		# Load Start Image
-		self.startButtonSize = (self.screenWidth * 1.5 / 10, self.screenHeight * 1.5 / 10)
+		self.startButtonSize = (self.screenWidth * 2 / 10, self.screenHeight * 1.5 / 10)
 		self.startButtonImage = pygame.transform.scale(Const.START_BUTTON_IMAGE, self.startButtonSize)
 		self.startButtonCoord = (self.screenWidth / 2 + (self.screenWidth / 2 - self.startButtonSize[0]) / 2, self.screenHeight * 3 / 4 + (self.screenHeight * 1 / 4 - self.startButtonSize[1]) / 2)
 		self.startButton = ButtonClass.Button(self.startButtonImage, self.startButtonCoord)

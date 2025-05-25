@@ -89,7 +89,7 @@ class Leaderboard():
 			self.playerContainer.append(LeaderboardInfo(self.gameScreen, self.playerContainerSize, playerContainerCoord, self.playerContainerPadding, self.playerList[i], i + 1))
 
 		# Back Button
-		self.backButtonSize = (self.screenWidth * 1 / 10, self.screenHeight * 1 / 10)
+		self.backButtonSize = (self.screenWidth * 1.5 / 10, self.screenHeight * 1 / 10)
 		self.backButtonImage = pygame.transform.scale(Const.BACK_BUTTON_IMAGE, self.backButtonSize)
 		self.backButtonCoord = ((self.screenWidth - self.backButtonSize[0]) / 2, playerContainerInitCoord[1] + self.playerContainerSize[1] + (self.screenHeight - (playerContainerInitCoord[1] + self.playerContainerSize[1]) - self.backButtonSize[1]) / 2)
 		self.backButton = ButtonClass.Button(self.backButtonImage, self.backButtonCoord)
