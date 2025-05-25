@@ -61,9 +61,9 @@ class Leaderboard():
 			self.gameScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 		else:
 			self.gameScreen = pygame.display.set_mode((1920, 1080))
+		self.screenWidth, self.screenHeight = pygame.display.get_surface().get_size()
 		self.background = pygame.transform.scale(Const.LEADERBOARD_BG, (pygame.display.get_surface().get_size()))
 		self.gameScreen.blit(self.background, (0, 0))
-		self.screenWidth, self.screenHeight = pygame.display.get_surface().get_size()
 
 		self.playerList = playerList
 		self.playerContainerNum = len(self.playerList)

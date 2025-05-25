@@ -62,6 +62,7 @@ BACK_BUTTON_IMAGE = pygame.image.load('Assets/Images/Leaderboard/back-button.png
 
 # Menu
 MENU_BACKGROUND = pygame.image.load('Assets/Images/Background/Menu-Background.png')
+NHA_TAI_TRO = pygame.image.load('Assets/Images/Background/NhaTaiTro.png')
 START_BUTTON_IMAGE = pygame.image.load('Assets/Images/Menu/start-button.png')
 TWO_PLAYER_IMAGE = pygame.image.load('Assets/Images/Menu/2player-button.png')
 FOUR_PLAYER_IMAGE = pygame.image.load('Assets/Images/Menu/4player-button.png')

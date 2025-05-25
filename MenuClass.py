@@ -60,7 +60,8 @@ class Menu():
 		# Menu Background
 		self.backgroundImage = pygame.transform.scale(Const.MENU_BACKGROUND, (self.screenWidth, self.screenHeight))
 
-		print(self.screenWidth, self.screenHeight)
+		# NhaTaiTro
+		self.nhataitroImage = pygame.transform.scale(Const.NHA_TAI_TRO, (self.screenWidth * 0.23, self.screenHeight * 0.1))
 
 		##### Prepare Data For Ingame
 		self.mode = 0
@@ -212,6 +213,7 @@ class Menu():
 			
 			# Draw Window
 			self.gameScreen.blit(self.backgroundImage, (0, 0))
+			self.gameScreen.blit(self.nhataitroImage, ((self.screenWidth - self.nhataitroImage.get_width())/2, 15))
 
 			self.startButton.draw(self.gameScreen)
 			self.twoPlayerButton.draw(self.gameScreen)
