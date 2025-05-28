@@ -1,52 +1,52 @@
-# Coding-Challenge-Game2-Lost In The Star
-This is Game Lost In The Star - Game 2 of Final Round of Coding Challenge Competition in HCMUS-VNU (Ho Chi Minh University of Science). 
+# Coding Challenge 2025 - Robot đại chiến
+This is the repository of the frontend of the game "Robot đại chiến", used to visualize the matches between the bots.
 
-## Members
-- Tuan-Viet Tran
-- Nghia-Viet Hoang
-- Nhat-Hung Dang Hoang
+Backend: [link](https://github.com/Coding-Challenge-2025/RobotDaiChien-FE.git)
 
-## Project Description
-The game is coded in python3 using the multimedia library [pygame](https://www.pygame.org/news).
+## Requirements
 
-In this game, there are 2 or 4 teams lost in the star in the university. They are randomly reborned in a square matrix N x N with some cells are obstacles. To overcome the 
-lost to comeback to their planet, they need to draw the color of cells by their own color: each team has their own color. In detail, team 1 has color red, team 2 has color green,
-team 3 has color blue and the last team has color yellow.In one move, they can go to left, right, up or down without going to obstacle cells. 
+The frontend is written in Python, with several packages used. To begin with, you need to have Python installed on your machine, specifically [Python 3.11](https://www.python.org/downloads/release/python-3110/) or higher.
 
-Their tasks is to draw as much cell as they can to win the game in order to comeback to their planet.
-This is interactive problem that the participant need to code a program to draw that cell with only map's information in each step. Good luck for the participant when enjoy this game!
-  
-## Getting Started
-### Installing
-* Clone the project to your computer. 
-```
-  git clone https://github.com/ttviet2805/Coding-Challenge-BombIT.git
-```
-* Set up Pygame Library:
-```
-  python3 -m pip install -U pygame --user
+You should also have a package manager to insall said dependencies for the interactor. The most commonly used one is [pip](https://pip.pypa.io/en/stable/); an alternative like [conda](https://docs.conda.io/en/latest/) can also be used (and recommended).
+
+If you're a conda user, run this script beforehand.
+
+```bash
+conda create -n CodingChallenge2025 python=3.12
+conda activate CodingChallenge2025
 ```
 
-### Executing program
-* Using an IDE to compile this game (Sublime Text 3, Visual Studio Code, ...)
-* Remember to add all source codes to project before building and running
-* Run file main.py to enjoy the Game
+Now with a package manager available, install the necessary requirements.
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
+
+First, clone this repo
+
+```bash
+git clone https://github.com/Coding-Challenge-2025/RobotDaiChien-BE.git
+```
+
+To run the frontend
+
+```bash
+python main.py
+```
+
 * Game Menu Screen
 <div align = "center">
-  <img src = "Assets/Images/Game-Demo/image-1.png" style = "width: 50%;">
+  <img src = "Assets/Images/Game-Demo/image1.png" style = "width: 50%;">
 </div>
 
 * Game Screen
 <div align = "center">
-  <img src = "Assets/Images/Game-Demo/image-2.png" style = "width: 50%;">
+  <img src = "Assets/Images/Game-Demo/image2.png" style = "width: 50%;">
 </div>
 
 * Leaderboard Screen
 <div align = "center">
-  <img src = "Assets/Images/Game-Demo/image-3.png" style = "width: 50%;">
+  <img src = "Assets/Images/Game-Demo/image3.png" style = "width: 50%;">
 </div>
-
-## Contact
-Tran Tuan Viet - ttviet2805@gmail.com
